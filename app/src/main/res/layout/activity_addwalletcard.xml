@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.AddwalletcardActivity">
+    <!-- 全局背景香港 -->
+    <LinearLayout
+        android:id="@+id/login_under"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hk"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_add_card"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#770018"
+        android:layout_marginTop="60dp"
+
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="添加銀行卡"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <!-- 第零行空白 -->
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/title_add_card">
+
+    </LinearLayout>
+
+    <!-- 第一行持卡人 -->
+    <LinearLayout
+        android:id="@+id/ac_cardholder"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/empty"
+        tools:layout_editor_absoluteX="156dp">
+
+        <TextView
+            android:id="@+id/ac_cardholder_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="30sp"
+            android:paddingTop="20sp"
+            android:text="持卡人"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50sp"
+            android:paddingTop="20sp"
+            android:text="陳大文"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:paddingTop="20sp"
+            android:text="(賬戶擁有者)"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <!-- 第二行所屬銀行 -->
+    <LinearLayout
+        android:id="@+id/ac_bank"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/ac_cardholder"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ac_bank_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="30sp"
+            android:paddingTop="20sp"
+            android:text="所屬銀行"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/edittext2"
+            android:hint="所屬銀行"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColorHint="#3C3C3C"
+            />
+    </LinearLayout>
+
+    <!-- 第三行卡號 -->
+    <LinearLayout
+        android:id="@+id/ac_kahao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/ac_bank"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ac_kahao_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="30sp"
+            android:paddingTop="20sp"
+            android:text="卡號"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_cardNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/edittext2"
+            android:hint="卡號"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColorHint="#3C3C3C"
+            />
+    </LinearLayout>
+
+    <!-- 第四行手機號 -->
+    <LinearLayout
+        android:id="@+id/ac_shoujihao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/ac_kahao"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ac_shoujihao_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="30sp"
+            android:paddingTop="20sp"
+            android:text="手機號碼"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_phoneNum"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:background="@drawable/edittext2"
+            android:hint="手機號碼"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColorHint="#3C3C3C" />
+        <Button
+            android:id="@+id/btn_getCode2"
+            android:clickable="true"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background = "#B3B3B3"
+            android:text="獲取驗證碼"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 第五行驗證碼 -->
+    <LinearLayout
+        android:id="@+id/ac_yanzhengma2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ac_shoujihao">
+
+        <TextView
+            android:id="@+id/ac_yanzhengma2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30sp"
+            android:paddingTop="20sp"
+            android:text="驗證碼"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/edittext2"
+            android:hint="驗證碼"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColorHint="#3C3C3C"/>
+    </LinearLayout>
+
+    <!-- 添加按鈕-->
+    <LinearLayout
+        android:id="@+id/ac_tianjiabuttom"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ac_yanzhengma2">
+
+        <Button
+            android:id="@+id/btn_add_card"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="#770018"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="40dp"
+            android:text="添加"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- 返回按鈕-->
+    <LinearLayout
+        android:id="@+id/ac_fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ac_tianjiabuttom">
+
+        <ImageButton
+            android:id="@+id/ac_huiqu"
+            android:clickable="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop ="200dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/back"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

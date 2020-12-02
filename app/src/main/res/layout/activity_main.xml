@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hk"
+    tools:context="com.example.cbdc.ui.login.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#770018"
+        android:padding="12dp"/>
+    <TextView
+        android:id="@+id/main_toptext"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:padding="13dp"
+        android:layout_centerHorizontal="true"
+        android:text="我的錢包"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/main_remain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="30dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="餘額："
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/main_remainText"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_top"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@id/main_remain"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/exportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/main_remainText"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="130dp"
+        android:background="#B3B3B3"
+        android:padding="1dp"
+        android:text="导出钱包"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/iconayout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/main_remainText"
+        android:layout_marginTop="0dp"
+        android:background="@null">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fukuan" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon1"
+            android:layout_marginLeft="30dp"
+            android:background="#B3B3B3"
+            android:text="付款"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_toRightOf="@id/icon1"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shoufukuanguanli" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon2"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@id/button1"
+            android:background="#B3B3B3"
+            android:text="收款"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_toRightOf="@id/icon2"
+            android:layout_marginLeft="17dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/zhuanzhang" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon3"
+            android:layout_marginLeft="34dp"
+            android:layout_toRightOf="@id/button2"
+            android:background="#B3B3B3"
+            android:text="轉賬"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_toRightOf="@id/icon3"
+            android:layout_marginLeft="17dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/nfc" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon4"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@id/button3"
+            android:background="#B3B3B3"
+            android:text="碰一碰"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/iconlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="340dp"
+        android:background="@null">
+        <ImageView
+            android:id="@+id/exchange"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/yibanduihuan" />
+        <Button
+            android:id="@+id/exButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:background="#B3B3B3"
+            android:padding="1dp"
+            android:text="數字港幣兌換"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/manage"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_below="@id/exchange"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/zhanghuguanli" />
+        <Button
+            android:id="@+id/manageButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="150dp"
+            android:layout_below="@id/exButton"
+            android:layout_marginTop="28dp"
+            android:background="#B3B3B3"
+            android:padding="1dp"
+            android:text="賬戶管理"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/outButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/manageButton"
+            android:layout_marginTop="30dp"
+            android:background="#B3B3B3"
+            android:padding="1dp"
+            android:text="登出"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

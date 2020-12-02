@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.cbdc.ui.login.ExchangeSuccess">
+
+        <!-- 全局背景香港 -->
+        <LinearLayout
+            android:id="@+id/login_under"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/hk"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+        <!-- 第一行中國銀行 -->
+        <LinearLayout
+            android:id="@+id/zhongguoyinhang"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="156dp">
+
+            <TextView
+                android:id="@+id/jiaoyitishi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:text="交易提示"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:id="@+id/xiaarrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop ="60dp"
+                android:layout_gravity = "center"
+
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/downarrow"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- 第二行兌換成功 -->
+        <LinearLayout
+            android:id="@+id/duihuanchenggong"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="156dp"
+            app:layout_constraintTop_toBottomOf="@+id/zhongguoyinhang">
+
+            <TextView
+                android:id="@+id/trader1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="HKD"
+                android:layout_gravity = "center"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/yue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="3000.00"
+                android:layout_gravity = "center"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/chengong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="兌換成功"
+                android:layout_gravity = "center"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+
+
+        <!-- 返回按鈕-->
+        <LinearLayout
+            android:id="@+id/fanhui5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/duihuanchenggong">
+
+            <ImageButton
+                android:id="@+id/huiqu5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop ="80dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/back"
+                />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!-- 全局背景香港 -->
+
+        <LinearLayout
+            android:id="@+id/login_under"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/hk"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#770018"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/login_text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="付款"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+
+        <!-- 第零行 空白 -->
+        <LinearLayout
+            android:id="@+id/kongbai"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/add_card">
+        </LinearLayout>
+
+
+        <!-- 第一行 選擇付款方式 -->
+        <LinearLayout
+            android:id="@+id/xuanzefukuanfangshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/kongbai"
+            tools:layout_editor_absoluteX="156dp">
+
+            <TextView
+                android:id="@+id/payment_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30sp"
+                android:paddingTop="30sp"
+                android:text="請選擇付款方式:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <!-- 第二行 付款方式 -->
+        <LinearLayout
+            android:id="@+id/fukuanfangshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/xuanzefukuanfangshi"
+            tools:layout_editor_absoluteX="156dp">
+
+            <Button
+                android:id="@+id/fukuanma"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop = "50dp"
+                android:layout_gravity="center"
+                android:text="付款碼"
+                android:textColor="#ffffff"
+                android:background="#770018"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/saoyisao"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop = "40dp"
+                android:layout_gravity="center"
+                android:text="掃一掃"
+                android:textColor="#ffffff"
+                android:background="#770018"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <!-- 返回按鈕-->
+        <LinearLayout
+            android:id="@+id/fanhui10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/fukuanfangshi">
+
+            <ImageButton
+                android:id="@+id/huiqu10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop ="250dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/back"
+                />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

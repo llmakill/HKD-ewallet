@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.login.AccountManagementActivity">
+
+        <!-- 全局背景香港 -->
+        <LinearLayout
+            android:id="@+id/login_under"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/hk"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zhanghuguanli2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#770018"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/guanli_text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="賬戶管理"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- 第零行空白 -->
+        <LinearLayout
+            android:id="@+id/kongbai"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/zhanghuguanli2">
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/kongbai">
+            android:layout_weight="1">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <!-- 添加銀行卡按鈕-->
+        <LinearLayout
+            android:id="@+id/tianjiabutton"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/rv">
+
+            <Button
+                android:id="@+id/add_card"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="#770018"
+                android:layout_gravity="center"
+                android:layout_marginTop ="40dp"
+                android:text="添加銀行卡"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- 返回按鈕-->
+        <LinearLayout
+            android:id="@+id/fanhui11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tianjiabutton">
+
+            <ImageButton
+                android:id="@+id/huiqu11"
+                android:clickable="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop ="100dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/back"
+                />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<ImageView
+    android:id="@+id/iv_item_casual_list_icon"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:background="@color/white"
+    app:layout_constraintBottom_toBottomOf="@+id/tv_item_casual_list_subtitle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/tv_item_casual_list_title">
+</ImageView>
+<!--    app:srcCompat="@drawable/ic_transaction" />-->
+
+<View
+    android:id="@+id/divider3"
+    android:layout_width="0dp"
+    android:layout_height="1dp"
+    android:layout_marginTop="8dp"
+    android:background="?android:attr/listDivider"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/tv_item_casual_list_subtitle"
+    app:layout_constraintTop_toBottomOf="@+id/tv_item_casual_list_subtitle" />
+
+<TextView
+    android:id="@+id/tv_item_casual_list_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+
+    android:textColor="#000000"
+    android:textSize="20sp"
+    app:layout_constraintStart_toEndOf="@+id/iv_item_casual_list_icon"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/tv_item_casual_list_subtitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+
+    android:textColor="#000000"
+    android:textSize="20sp"
+    app:layout_constraintStart_toStartOf="@+id/tv_item_casual_list_title"
+    app:layout_constraintTop_toBottomOf="@+id/tv_item_casual_list_title" />
+
+<TextView
+    android:id="@+id/tv_item_casual_list_optional_caption"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toBottomOf="@+id/tv_item_casual_list_subtitle"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/tv_item_casual_list_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

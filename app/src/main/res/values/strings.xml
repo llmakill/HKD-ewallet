@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name"> </string>
+    <!-- Strings related to login -->
+    <string name="prompt_username">手機號碼/身份證/錢包地址</string>
+    <string name="hello_user">數字港幣錢包</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_log_in">登錄/Login</string>
+    <string name="action_register">注冊/Register</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>
