@@ -14,8 +14,8 @@
 <p>Thanks to the following Github for inspiration and help on this project：<br>
 wallet-master: https://github.com/wangjinggithub/wallet and his blog: https://blog.csdn.net/u012846783/article/details/82775643 <br>
    Thanks to our TA's(Zhang Hao and Simon) instructions for some useful links to build our project:<br>
-   https://blog.ethereum.org/2015/12/03/how-to-build-your-own-cryptocurrency/
-   https://medium.com/@sibeeshvenu/create-your-own-cryptocurrency-in-private-consortium-network-ethereum-azure-blockchain-2e4385018777
-   https://medium.com/coinmonks/create-your-own-cryptocurrency-in-ethereum-blockchain-40865db8a29f
-   https://www.udemy.com/course/ethereum-developer-create-a-new-cryptocurrency-in-blockchain/
+   https://blog.ethereum.org/2015/12/03/how-to-build-your-own-cryptocurrency/<br>
+   https://medium.com/@sibeeshvenu/create-your-own-cryptocurrency-in-private-consortium-network-ethereum-azure-blockchain-2e4385018777<br>
+   https://medium.com/coinmonks/create-your-own-cryptocurrency-in-ethereum-blockchain-40865db8a29f<br>
+   https://www.udemy.com/course/ethereum-developer-create-a-new-cryptocurrency-in-blockchain/<br>
 </p>
